@@ -80,7 +80,7 @@ python manage.py seed_data  # After implementing the management command
 python manage.py runserver
 ```
 
-Visit:
+#Visit:
 
 http://localhost:8000/swagger/ — Swagger docs
 
@@ -89,7 +89,7 @@ http://localhost:8000/dashboard/ — Charts
 http://localhost:8000/admin - User management
 
 
-🧪 Technologies Used
+##🧪 Technologies Used
 Django 4.x
 
 Django REST Framework
@@ -105,15 +105,15 @@ Chart.js
 Faker
 
 
-📊 Example Charts
+##📊 Example Charts
 👥 Employees per Department (Pie Chart)
 
 📅 Monthly Attendance Overview (Bar Chart)
 
-📄 License
+##📄 License
 MIT License — use freely for learning or building!
 
-🙌 Author
+##🙌 Author
 Project built by @cpysleeper as part of a Django internship challenge.
 
 
