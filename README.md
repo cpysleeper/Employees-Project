@@ -14,7 +14,6 @@ default users: Admin and Employee. Admin can view and make change to all the dat
 - 🧪 Faker-based seed command for dummy data
 - ⚙️ Modular Django app structure
 - 🐘 PostgreSQL database via `.env` config
-- 🐳 Optional Docker support
 
 ---
 
