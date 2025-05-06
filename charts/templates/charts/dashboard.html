@@ -1,0 +1,51 @@
+<!-- Hidden JSON blocks -->
+{{ dept_labels|json_script:"dept-labels" }}
+{{ dept_counts|json_script:"dept-counts" }}
+{{ months|json_script:"months" }}
+{{ present_counts|json_script:"present-counts" }}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Employees per Department</h2>
+    <canvas id="deptChart"></canvas>
+
+    <h2>Monthly Attendance Overview</h2>
+    <canvas id="attendanceChart"></canvas>
+
+    <script>
+        const deptLabels = JSON.parse(document.getElementById('dept-labels').textContent);
+        const deptCounts = JSON.parse(document.getElementById('dept-counts').textContent);
+        const months = JSON.parse(document.getElementById('months').textContent);
+        const presentCounts = JSON.parse(document.getElementById('present-counts').textContent);
+    
+        const deptChart = new Chart(document.getElementById('deptChart'), {
+            type: 'pie',
+            data: {
+                labels: deptLabels,
+                datasets: [{
+                    data: deptCounts,
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8e44ad', '#2ecc71'],
+                }]
+            }
+        });
+    
+        const attendanceChart = new Chart(document.getElementById('attendanceChart'), {
+            type: 'bar',
+            data: {
+                labels: months,
+                datasets: [{
+                    label: 'Present Days',
+                    data: presentCounts,
+                    backgroundColor: '#3498db'
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
