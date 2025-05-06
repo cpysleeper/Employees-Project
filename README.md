@@ -18,7 +18,7 @@ default users: Admin and Employee. Admin can view and make change to all the dat
 ---
 
 ## 📁 Project Structure
-
+```
 employee_project/
 ├── employees/ # Employee model, views, serializers
 ├── attendance/ # Attendance model, views, serializers
@@ -30,7 +30,7 @@ employee_project/
 ├── .env.example # Sample environment variables
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
