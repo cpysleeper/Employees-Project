@@ -26,7 +26,6 @@ employee_project/
 ├── department/ # Department model
 ├── charts/ # Optional visual dashboards
 ├── employee_project/ # Project settings
-├── templates/ # Dashboard templates
 ├── .env.example # Sample environment variables
 ├── requirements.txt
 └── README.md
